@@ -29,7 +29,7 @@
 | Metrics/Callbacks  | AUC, Precision, Recall, EarlyStopping |
 | Visualization      | TensorBoard                   |
 | Optimization       | Mixed Precision, XLA          |
-| Deployment Ready   | ✅                             |
+| Deployment Ready   | -                             |
 
 ---
 
