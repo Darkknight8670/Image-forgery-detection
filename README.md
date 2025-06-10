@@ -110,8 +110,9 @@ Training Settings:
 
 
 📝 Notes
-🔄 Make sure TensorFlow Addons is version-compatible (check TF Addons Compatibility Matrix)
 
-🖼️ Works with datasets of 140K+ images or smaller custom datasets
+🔄  Make sure TensorFlow Addons is version-compatible (check TF Addons Compatibility Matrix)
 
-🧪 Designed for both research and production-level deployment
+🖼️  Works with datasets of 140K+ images or smaller custom datasets
+
+🧪  Designed for both research and production-level deployment
