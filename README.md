@@ -72,5 +72,23 @@
 
 ### 🔧 Installation
 
-```bash
-pip install tensorflow==2.10 keras tensorflow-addons scipy
+     ```bash
+       pip install tensorflow==2.10 keras tensorflow-addons scipy
+
+
+
+
+🧠 Model Architecture
+🔹 EfficientNetB7 (no top layer, pretrained on ImageNet)
+
+🔸 HybridSECBAM after initial convolutional blocks
+
+🔸 EnhancedMHABlock inserted mid-to-late layers
+
+🔹 Global Avg + Max Pooling
+
+🔹 Dense layers with Swish activation + Dropout
+
+🔸 Sigmoid output for binary classification
+
+
