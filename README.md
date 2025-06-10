@@ -116,3 +116,16 @@ Training Settings:
 🖼️  Works with datasets of 140K+ images or smaller custom datasets
 
 🧪  Designed for both research and production-level deployment
+
+
+
+
+
+
+📚 References
+
+EfficientNet: Rethinking Model Scaling
+
+CBAM: Convolutional Block Attention Module
+
+TensorFlow Addons
