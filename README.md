@@ -53,3 +53,24 @@
     │ └── test/
        ├── Authentic/
        └── Tampered/
+
+
+
+
+
+---
+
+## 🧪 Getting Started
+
+### 📦 Prerequisites
+
+- Python 3.7+
+- TensorFlow 2.10–2.14
+- TensorFlow Addons
+- Keras
+- Compatible NVIDIA GPU or Google Colab
+
+### 🔧 Installation
+
+```bash
+pip install tensorflow==2.14 keras tensorflow-addons scipy
