@@ -41,7 +41,7 @@
 │ └── Tampered/
 
 
-├── split_dataset/
+    ├── split_dataset/
     │ ├── train/
            ├── Authentic/
            └── Tampered/
