@@ -42,12 +42,14 @@
 
 
 ├── split_dataset/
-│ ├── train/
-       ├── Authentic/
-│      └── Tampered/
-│ ├── val/
-       ├── Authentic/
-│      └── Tampered/
-│ └── test/
+    │ ├── train/
+           ├── Authentic/
+           └── Tampered/
+
+    │ ├── val/
+           ├── Authentic/
+           └── Tampered/
+
+    │ └── test/
        ├── Authentic/
        └── Tampered/
