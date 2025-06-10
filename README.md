@@ -106,3 +106,12 @@ Training Settings:
 | Loss	    | Binary CrossEntropy|
 | Callbacks	|  EarlyStopping, LR Scheduler|
 | Mixed Precision	| ✅      |
+
+
+
+📝 Notes
+🔄 Make sure TensorFlow Addons is version-compatible (check TF Addons Compatibility Matrix)
+
+🖼️ Works with datasets of 140K+ images or smaller custom datasets
+
+🧪 Designed for both research and production-level deployment
