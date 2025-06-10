@@ -35,10 +35,10 @@
 
 ## 🗃️ Directory Structure
 
-├── dataset/
-│ └── dataset/
-│ ├── Authentic/
-│ └── Tampered/
+    ├── dataset/
+       │ └── dataset/
+             │ ├── Authentic/
+             │ └── Tampered/
 
 
     ├── split_dataset/
