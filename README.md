@@ -19,8 +19,7 @@ Comprehensive Metrics: Tracks accuracy, AUC, precision, and recall during traini
 Early Stopping & LR Scheduling: Automatically halts training on plateau and adjusts learning rates for optimal convergence.
 
 Directory Structure
-text
-.
+
 ├── dataset/
 │   └── dataset/
 │       ├── Authentic/
