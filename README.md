@@ -124,9 +124,9 @@ Training Settings:
 
 📚 References
 
-EfficientNet: Rethinking Model Scaling
+EfficientNet: [Rethinking Model Scaling](https://arxiv.org/abs/1905.11946)
 
-CBAM: Convolutional Block Attention Module
+CBAM: [Convolutional Block Attention Module](https://arxiv.org/abs/1807.06521)
 
 TensorFlow Addons
 
