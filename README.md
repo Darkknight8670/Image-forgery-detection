@@ -129,3 +129,9 @@ EfficientNet: Rethinking Model Scaling
 CBAM: Convolutional Block Attention Module
 
 TensorFlow Addons
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+📜 License
+
+This project is licensed under the MIT License – see the LICENSE file for details.
