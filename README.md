@@ -80,6 +80,8 @@
 
 
 🧠 Model Architecture
+
+
 🔹 EfficientNetB7 (no top layer, pretrained on ImageNet)
 
 🔸 HybridSECBAM after initial convolutional blocks
