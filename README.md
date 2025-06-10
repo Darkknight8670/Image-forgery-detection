@@ -35,3 +35,11 @@
 
 ## 🗃️ Directory Structure
 
+├── dataset/
+│ └── dataset/
+│ ├── Authentic/
+│ └── Tampered/
+├── split_dataset/
+│ ├── train/
+│ ├── val/
+│ └── test/
