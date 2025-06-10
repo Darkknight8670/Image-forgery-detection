@@ -73,4 +73,4 @@
 ### 🔧 Installation
 
 ```bash
-pip install tensorflow==2.14 keras tensorflow-addons scipy
+pip install tensorflow==2.10 keras tensorflow-addons scipy
