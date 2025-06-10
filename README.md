@@ -1,145 +1,37 @@
+# 🔍 Image Forgery Detection with Enhanced EfficientNetB7
 
-# Project Title
+**Image Forgery Detection** is a high-performance deep learning pipeline designed to identify manipulated (tampered) images with impressive precision and reliability. Leveraging the power of **EfficientNetB7** and **custom attention blocks**, the system excels at binary classification of authentic vs tampered images at scale.
 
-A brief description of what this project does and who it's for
+---
 
-Image Forgery Detection with Enhanced EfficientNetB7
-Overview
-This repository provides a state-of-the-art pipeline for detecting image forgeries using a custom deep learning architecture based on EfficientNetB7, enhanced with advanced attention mechanisms. The project includes dataset preparation, model architecture, training, and evaluation scripts for robust binary classification of Authentic vs Tampered images.
+## ✨ Features
 
-Features
-EfficientNetB7 Backbone: Utilizes a pre-trained EfficientNetB7 model for powerful feature extraction.
+- ✅ **EfficientNetB7 Backbone** for powerful feature extraction  
+- 🧠 **Hybrid SE-CBAM Attention** for channel + spatial attention  
+- 🔁 **Enhanced Multi-Head Attention** with window-based spatial focus  
+- ⚙️ **Mixed Precision + XLA** for optimized GPU training  
+- 🧪 **Advanced Data Augmentation** with photometric and geometric transforms  
+- 📈 **Comprehensive Metrics** (Accuracy, AUC, Precision, Recall)  
+- ⏱️ **EarlyStopping** and **LearningRateScheduler** for better generalization  
+- 📊 **TensorBoard Logging** for real-time training insights  
+- 📦 **Custom Data Split Script** for flexible training/validation/testing
 
-Custom Attention Blocks: Integrates Hybrid SE-CBAM and Enhanced Multi-Head Attention (MHA) blocks for improved spatial and channel-wise feature learning.
+---
 
-Mixed Precision Training: Leverages TensorFlow's mixed precision and XLA for faster training on modern GPUs.
+## 🏗️ Tech Stack
 
-Flexible Data Pipeline: Includes scripts to split datasets and apply advanced data augmentation.
+| Category           | Tech Used                     |
+|--------------------|-------------------------------|
+| Model Backbone     | EfficientNetB7 (Imagenet)     |
+| Attention Layers   | Hybrid SE-CBAM, MHA Block     |
+| Framework          | TensorFlow, Keras             |
+| Data Handling      | tf.data, ImageDataGenerator   |
+| Metrics/Callbacks  | AUC, Precision, Recall, EarlyStopping |
+| Visualization      | TensorBoard                   |
+| Optimization       | Mixed Precision, XLA          |
+| Deployment Ready   | ✅                             |
 
-Comprehensive Metrics: Tracks accuracy, AUC, precision, and recall during training.
+---
 
-Early Stopping & LR Scheduling: Automatically halts training on plateau and adjusts learning rates for optimal convergence.
+## 🗃️ Directory Structure
 
-Directory Structure
-
-├── dataset/
-│   └── dataset/
-│       ├── Authentic/
-│       └── Tampered/
-├── split_dataset/
-│   ├── train/
-│   ├── val/
-│   └── test/
-├── model/
-├── logs/
-├── scripts/
-│   └── (all code files)
-└── README.md
-Getting Started
-1. Prerequisites
-Python 3.7+
-
-TensorFlow 2.10–2.14 (see [TensorFlow Addons compatibility])
-
-TensorFlow Addons
-
-Keras
-
-Google Colab or a local machine with a CUDA-enabled GPU recommended
-
-Install dependencies:
-
-bash
-pip install tensorflow==2.14 keras tensorflow-addons scipy
-2. Dataset Preparation
-Organize your dataset as follows:
-
-text
-dataset/dataset/
-    Authentic/
-        img1.jpg
-        img2.jpg
-        ...
-    Tampered/
-        img1.jpg
-        img2.jpg
-        ...
-Run the data splitting script to create train, validation, and test sets:
-
-python
-# In scripts/data_split.py
-python data_split.py
-This creates a split_dataset/ directory with subfolders for each split and class.
-
-Model Architecture
-Base: EfficientNetB7 (Imagenet weights, no top layer)
-
-Attention: Hybrid SE-CBAM block + Enhanced Multi-Head Attention block after specific feature layers
-
-Pooling: Combines global max and average pooling
-
-Dense Layers: Two dense layers with Swish activation, followed by dropout
-
-Output: Single sigmoid neuron for binary classification
-
-Custom layers are implemented in scripts/attention_blocks.py and integrated in scripts/model.py.
-
-Training
-Train the model using the provided script:
-
-python
-# In scripts/train.py
-python train.py
-Key training settings:
-
-Batch size: 16
-
-Image size: 224x224
-
-Loss: Binary cross-entropy
-
-Optimizer: Adam (lr=1e-4, clipnorm=1.0)
-
-Metrics: accuracy, AUC, precision, recall
-
-Early stopping and learning rate reduction on plateau
-
-TensorBoard logging enabled
-
-Evaluation
-Validation and test metrics are reported after each epoch.
-
-Example performance (from logs):
-
-Accuracy: >98%
-
-AUC: >0.99
-
-Precision/Recall: >0.97 on validation set after convergence.
-
-Usage
-To use the trained model for inference:
-
-python
-from tensorflow.keras.models import load_model
-model = load_model('model/best_model.h5', custom_objects={
-    'HybridSECBAM': HybridSECBAM,
-    'EnhancedMHABlock': EnhancedMHABlock
-})
-# Predict on new images...
-Notes
-TensorFlow Addons: This project uses GroupNormalization from TensorFlow Addons. Ensure your TensorFlow and Addons versions are compatible (see [compatibility matrix]).
-
-Mixed Precision: Mixed precision is enabled after model creation for optimal GPU performance.
-
-Large Dataset: The pipeline is optimized for large datasets (e.g., 140,000+ images), but can be adapted for smaller datasets.
-
-References
-EfficientNet: Rethinking Model Scaling for Convolutional Neural Networks
-
-CBAM: Convolutional Block Attention Module
-
-TensorFlow Addons Compatibility
-
-License
-This project is licensed under the MIT License.
