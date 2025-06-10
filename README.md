@@ -97,10 +97,11 @@
 
 
 Training Settings:
-Parameter	Value
-Image Size	224 x 224
-Batch Size	16
-Optimizer	Adam (lr=1e-4)
-Loss	Binary CrossEntropy
-Callbacks	EarlyStopping, LR Scheduler
-Mixed Precision	✅
+
+| Parameter 	|  Value|
+| Image Size	| 224 x 224|
+| Batch Size	| 16      |
+| Optimizer	| Adam (lr=1e-4)|
+| Loss	    | Binary CrossEntropy|
+| Callbacks	|  EarlyStopping, LR Scheduler|
+| Mixed Precision	| ✅      |
