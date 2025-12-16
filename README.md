@@ -1,4 +1,6 @@
-# 🔍 Image Forgery Detection with Enhanced EfficientNetB7
+# 🔍  Link :  https://huggingface.co/spaces/Vikas263/deepfake-detection-tool
+Image Forgery Detection with Enhanced EfficientNetB7 
+                                       
 
 **Image Forgery Detection** is a high-performance deep learning pipeline designed to identify manipulated (tampered) images with impressive precision and reliability. Leveraging the power of **EfficientNetB7** and **custom attention blocks**, the system excels at binary classification of authentic vs tampered images at scale.
 
@@ -135,7 +137,7 @@ TensorFlow Addons
 📜 License
 
 This project is licensed under the MIT License – see the LICENSE file for details.
-                            Link :  https://huggingface.co/spaces/Vikas263/deepfake-detection-tool
+                            
 
 
                                   
